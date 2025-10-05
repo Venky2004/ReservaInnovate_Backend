@@ -12,11 +12,11 @@
 	<groupId>com.example</groupId>
 	<artifactId>backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>backend-jfsd</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>24</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -88,8 +88,12 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+                <imageName>backend-jfsd</imageName>
+            </configuration>
 			</plugin>
 		</plugins>
 	</build>
+
 
 </project>
